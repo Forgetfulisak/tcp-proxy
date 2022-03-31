@@ -66,7 +66,7 @@ func handleConnTls(src *tls.Conn, addr string, stocLog, ctsLog bool) {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("tls done", dst)
+	fmt.Println("tls done")
 	// server to client
 	go func() {
 		defer dst.Close()
